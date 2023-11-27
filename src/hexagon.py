@@ -4,7 +4,7 @@ import user
 
 
 def create_new_user(msg: aiogram.types.Message) -> user.User:
-    user_data = user.User(msg.from_user.id, msg.from_user.first_name, msg.from_user.last_name, msg.from_user.full_name)
+    user_data = user.User(msg.from_user.id, msg.from_user.first_name, msg.from_user.last_name, msg.from_user.username)
     user_data.update_data()
     return user_data
 
