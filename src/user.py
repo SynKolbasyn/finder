@@ -29,9 +29,11 @@ class User:
         )
 
     def command_start(self) -> str:
+        self.update_data()
         return "There should be a welcome message here"
 
     def command_help(self) -> str:
+        self.update_data()
         return "There should be a text explaining how to use the bot"
 
     def message_process(self, msg: str) -> str:
